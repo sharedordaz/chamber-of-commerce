@@ -48,51 +48,52 @@ main{
 
 /* Nav bar */
 /*Title banner*/
-.title{
+.nav-banner{
     background-color: var(--dark-blue);
+
+    /* height: 15%; */
+
+    display:grid;
+    grid-template-columns: 1fr 4fr;
+
 }
 .logo{
-    float: left;
-    margin-left:3em;
-    margin-right:3px;
-    max-width: 5em;
-    padding:0.5%;
-}
-.title strong, .title h1{
-    display: block;
-    padding:5px;
-    color: var(--orange);
-    font-weight: 400;
+    max-width: 40%;
+    height:75%;
+    grid-column: 1/1;
+    margin-left: 15%;
+    margin-top: 7% ;
 }
 
 nav{
     background-color: var(--blue);
-    margin-top:-1em;
+    grid-column: 2/2;
+    margin:3%;
 }
 nav ul{
     display: flex;
     flex-direction: row;
     list-style-type: none;
-    align-content: stretch;
-    /*justify-content: center;*/
 }
 
-nav ul a li{
-    padding: 1%;
+nav ul li{
+    display: block;
+    text-align:center;
     transition: all ease-in-out 500ms;
     cursor: pointer;
-    padding: 1em;
-    text-align:center;
-    max-height: 1em;
-    
+
+    padding-top:3.5%;
+    padding-bottom: 3.5%;
+    width:16%;
 }
-nav ul a li:hover{
+nav ul li:hover{
     background-color: rgb(0, 0, 0);
 }
-nav ul a{
+nav ul li a{
+    padding:1%;
     text-decoration: none;
     color: var(--lighter-blue);
-    
+    font-weight: bolder;
 }
 .menu{
     filter: invert();
@@ -150,32 +151,22 @@ footer h5, footer h2, footer p, footer li, footer b, footer strong{
 
 @media screen and (max-width: 600px){ /*MEDIUM*/
     /*------Mobile title CSS*/
-    .title img{
-        margin-left: 0em;
+
+    .nav-banner{
+        grid-template-columns: 1fr 3fr;
     }
-    /*----------Mobile nav CSS*/
-    nav ul{
-        display: flex;
-        flex-direction: column;
-    }
-     
-    nav ul li{
-        display: none;
+    nav{
+        margin:1%;
     }
 
-    .display-menu{
-        display: flex
+    nav ul li{    
+        width:14%;
     }
-    
-    .menu{
-        display: flex;
-        float: right;
-        max-width: 10%;
-        margin-left:5em;
-        }
-    .menu:hover{
-        background-color: whitesmoke;
+
+    nav ul li a{
+        font-size: 0.5em;
     }
+   
     /*FOOTER*/
     footer{
         grid-template: 1fr 1fr / 1fr;
@@ -192,15 +183,50 @@ footer h5, footer h2, footer p, footer li, footer b, footer strong{
     p, b,strong,  i, li, h1, h2, h3, h4, h5{
         font-size: 0.7em;
     }
-    .menu{
-        max-width: 15%;
-        height: 3.3em;
-    }
-
-    nav ul a li{
-        padding:1%;
+        /* Nav bar */
+    /*Title banner*/
+    .nav-banner{
+        grid-template-columns: 2fr 1fr;
     }
     .logo{
-        max-width: 3em;
+        max-width: 20%;
+        height:70%;
+    }
+
+    nav{
+        display:none; 
+    }
+
+    .display-menu{
+        display: flex;
+        grid-column: 1/3;
+    }
+    .display-menu ul{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .display-menu ul li{
+        display: flex;
+        width:85%;
+        text-align: left;
+        grid-column:1/3;
+        padding:0px;
+    }
+    .display-menu ul li a{
+        text-align: left;
+    }
+
+    
+    .menu{
+        display: flex;
+        max-width: 80%;
+        height: 80%;
+        margin:0%;
+        margin-top:10%;
+    }
+    .menu:hover{
+        background-color: whitesmoke;
     }
 }

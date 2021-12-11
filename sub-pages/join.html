@@ -11,24 +11,22 @@
 </head>
 <body>
     <header>
-        <div class = "title">
-            <a href="../index.html"><img class="logo" src="../images/site-logo.png" alt="Time 2day logo"></a>
+        <div class = "nav-banner">
+            <a href="../index.html"><img class="logo" src="../images/site-logo.png" alt="site logo"></a>
             <img class="menu" src="../images/menu.png" alt="menu icon">
-            <h1>Ecatepec</h1>
-            <strong>Time to invest in a new place</strong>
-
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="city-info.html">City Information</a></li>
+                    <li><a href="join.html">Join Us</a></li>
+                    <li><a href="businesses.html">Businesses</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+                <script src="../scripts/nav-script.js"></script>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <a href="../index.html"><li>Home</li></a>
-                <a href="city-info.html"><li>City Information</li></a>
-                <a href="join.html"><li>Join Us</li></a>
-                <a href="businesses.html"><li>Businesses</li></a>
-                <a href="directory.html"><li>Directory</li></a>
-                <a href="contact.html"><li>Contact Us</li></a>
-            </ul>
-            <script src="../scripts/nav-script.js"></script>
-        </nav>
+        
         </header>
         <main>
             <form class="join-form" action="../form.php">
@@ -47,22 +45,22 @@
                 <hr>
                 <div></div>
                 <!-- Business Name -->
-                <label for="b-name">Business name:</label><br>
+                <label for="b-name">Business Name:</label><br>
                 <input type="text" id="b-name" name="b-name" ><br>
                 <!-- Business Adress --> <div></div>
-                <label for="b-adress">Business adress:</label><br>
+                <label for="b-adress">Business Address:</label><br>
                 <input type="text" id="b-adress" name="b-adress" ><br>
                 <!-- Business Website --> <div></div>
                 <label for="b-wsite">Business Website:</label><br>
                 <input type="text" id="b-wsite" name="b-wsite" ><br>
                 <!-- Business description --> <div></div>
-                <label for="b-description">Aditional information or comments</label><br>
+                <label for="b-description">Aditional Information or Comments</label><br>
                 <textarea name="b-description" id="b-description" cols="10" rows="2"></textarea><br>
                 <br>
                 <!-- Membership level --> <div></div>
-                <label for="m-level">Membership level</label><br>
+                <label for="m-level">Membership Level</label><br>
                 <select name="m-level" id="m-level">
-                    <option selected disabled>Select option...</option>
+                    <option selected disabled>Select Option...</option>
                     <option value="non-profit">Non-profit ($100)</option>
                     <option value="bronze">Bronze ($200)</option>
                     <option value="silver">Silver ($400)</option>

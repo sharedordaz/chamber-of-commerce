@@ -1,16 +1,13 @@
 let menu_icon = document.querySelector(".menu");
-let menu = document.querySelectorAll("ul a li");
+let nav = document.querySelector("nav");
 //console.log(menu);
 menu_icon.addEventListener("click", show_menu)
 
 function show_menu() {
-    menu.forEach( item => {
-        if (item.className === ""){
-            item.className = "display-menu";
+    if (nav.className === ""){
+        nav.className = "display-menu";
     }
     else{
-        item.className = "";
-    }
-
-    });
+        nav.className = "";
+        }
 }
