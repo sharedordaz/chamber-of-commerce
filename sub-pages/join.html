@@ -6,47 +6,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/normalize.css">
     <link rel="stylesheet" href="../CSS/style.css">
-    <link rel="icon" href="images/site_icon.png">
+    <link rel="icon" href="../images/site_icon.png">
     <title>Join Us</title>
 </head>
 <body>
     <header>
         <div class = "title">
-            <a href="../index.html"><img class="logo" src="images/site-logo.png" alt="Time 2day logo"></a>
-            <img class="menu" src="images/menu.png" alt="menu icon">
+            <a href="../index.html"><img class="logo" src="../images/site-logo.png" alt="Time 2day logo"></a>
+            <img class="menu" src="../images/menu.png" alt="menu icon">
             <h1>Ecatepec</h1>
             <strong>Time to invest in a new place</strong>
-            
+
         </div>
         <nav>
-            <ul>  
+            <ul>
                 <a href="../index.html"><li>Home</li></a>
                 <a href="city-info.html"><li>City Information</li></a>
                 <a href="join.html"><li>Join Us</li></a>
                 <a href="businesses.html"><li>Businesses</li></a>
+                <a href="directory.html"><li>Directory</li></a>
                 <a href="contact.html"><li>Contact Us</li></a>
             </ul>
             <script src="../scripts/nav-script.js"></script>
         </nav>
         </header>
         <main>
-
-            <a href="#" target="blank">Wireframes</a>
+            <form class="join-form" action="../form.php">
+                <!--First Name--> 
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" ><br>
+                <!-- Last Name --> <div></div>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" ><br>
+                <!-- E-mail --> <div></div>
+                <label for="email">E-mail:</label><br>
+                <input type="email" id="email" name="email" placeholder="myemail@domain.com"><br>
+                <!-- Phone Number --> <div></div>
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="123-45-678"><br>
+                <hr>
+                <div></div>
+                <!-- Business Name -->
+                <label for="b-name">Business name:</label><br>
+                <input type="text" id="b-name" name="b-name" ><br>
+                <!-- Business Adress --> <div></div>
+                <label for="b-adress">Business adress:</label><br>
+                <input type="text" id="b-adress" name="b-adress" ><br>
+                <!-- Business Website --> <div></div>
+                <label for="b-wsite">Business Website:</label><br>
+                <input type="text" id="b-wsite" name="b-wsite" ><br>
+                <!-- Business description --> <div></div>
+                <label for="b-description">Aditional information or comments</label><br>
+                <textarea name="b-description" id="b-description" cols="10" rows="2"></textarea><br>
+                <br>
+                <!-- Membership level --> <div></div>
+                <label for="m-level">Membership level</label><br>
+                <select name="m-level" id="m-level">
+                    <option selected disabled>Select option...</option>
+                    <option value="non-profit">Non-profit ($100)</option>
+                    <option value="bronze">Bronze ($200)</option>
+                    <option value="silver">Silver ($400)</option>
+                    <option value="gold">Gold ($1000) </option>
+                </select>
+                <div></div>
+                <input onclick="window.open('thanks.html')" type="submit" value="Submit">
+                <div></div>
+                <input type="reset">
+            </form>
         </main>
         <footer>
             <h2>Contact Us</h2>
             <div class= "contact_info">
                 <ul>
-                    <li><img src="images/phone.png" alt="Phone"> (+52)5541836785</li>
-                    <li><img src="images/e-mail.png" alt="E-mail"> san21058@byui.edu</li>
+                    <li><img src="../images/phone.png" alt="Phone"> (+52)5541836785</li>
+                    <li><img src="../images/e-mail.png" alt="E-mail"> san21058@byui.edu</li>
                 </ul>
                 <div class= "social_media">
-                    <a href="https://www.youtube.com" target="_blank"><img src="images/youtube.png" alt="youtube"></a>
-                    <a href="https://www.twitter.com" target="_blank"><img src="images/twitter.png" alt="twitter"></a>
-                    <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png" alt="facebook"></a>
+                    <a href="https://www.youtube.com" target="_blank"><img src="../images/youtube.png" alt="youtube"></a>
+                    <a href="https://www.twitter.com" target="_blank"><img src="../images/twitter.png" alt="twitter"></a>
+                    <a href="https://www.facebook.com" target="_blank"><img src="../images/facebook.png" alt="facebook"></a>
                 </div>
             </div>
-    
+
         </footer>
 </body>
 </html>
