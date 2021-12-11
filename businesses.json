@@ -1,45 +1,45 @@
 {
-    "businesses": [
+    "main": [
         {
             "name" : "La Costeña",
-            "contact-info" : "Brand dedicated to fabricate canned products founded in 1923 by Vicente Lopez",
+            "contact_info" : "Brand dedicated to fabricate canned products founded in 1923 by Vicente Lopez",
             "logo" : "../images/b-logos/la-costena.png",
             "link" : "https://www.lacostena.com.mx/es/"
         },
 
         {
             "name" : "Jumex",
-            "contact-info" : "Brand dedicated to sell juice and nectar. Jumex means 'Jugos Mexicanos' or Mexican Juice",
+            "contact_info" : "Brand dedicated to sell juice and nectar. Jumex means 'Jugos Mexicanos' or Mexican Juice",
             "logo" : "../images/b-logos/jumex.png",
             "link" : "http://grupojumex.mx/"
         },
         {
             "name" : "Apsa",
-            "contact-info" : "Company dedicated to the fabrication of all types of paper and carboard, in a high quality.",
+            "contact_info" : "Company dedicated to the fabrication of all types of paper and carboard, in a high quality.",
             "logo" : "../images/b-logos/apsa.jpg",
             "link" : "https://www.apsa.com.mx/"
         },
         {
             "name" : "La Corona",
-            "contact-info" : "Factory dedicated to the fabrication of economic and efficient varieties of soaps and other cleaning supplies",
+            "contact_info" : "Factory dedicated to the fabrication of economic and efficient varieties of soaps and other cleaning supplies",
             "logo" : "../images/b-logos/la-corona.png",
             "link" : "https://www.lacorona.com.mx/"
         },
         {
             "name" : "Inalmet",
-            "contact-info" : "Company dedicated to the manufacturing of electronic devices, mostly industrial grade ones",
+            "contact_info" : "Company dedicated to the manufacturing of electronic devices, mostly industrial grade ones",
             "logo" : "../images/b-logos/inalmet.png",
             "link" : "http://inalmet.com.mx/contacto/"
         },
         {
             "name" : "IPISA",
-            "contact-info" : "Manufacturers of industrial grade equipment, mostly hidraulic technology",
+            "contact_info" : "Manufacturers of industrial grade equipment, mostly hidraulic technology",
             "logo" : "../images/b-logos/ipisa.jpg",
             "link" : "https://ipisa.com.mx/"
         },
         {
             "name" : "AQUAVITT",
-            "contact-info" : "Enterprise dedicated to the manufacturing, sale and instalation of water purifying plant equipment",
+            "contact_info" : "Enterprise dedicated to the manufacturing, sale and instalation of water purifying plant equipment",
             "logo" : "../images/b-logos/aquavitt.jpg",
             "link" : "https://www.aquavitt.com.mx/"
         }
