@@ -200,8 +200,14 @@ footer h5, footer h2, footer p, footer li, footer b, footer strong{
 }
 
 /*----------CONTACT US*/
+    .contact-us{
+        font-size: 2em;
+    }
     .contact-us img{
-        max-width:1rem;
+        max-width:1em;
+    }
+    .contact-us iframe{
+        margin-left:auto;
     }
 
 
