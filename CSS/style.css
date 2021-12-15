@@ -199,9 +199,18 @@ footer h5, footer h2, footer p, footer li, footer b, footer strong{
     margin-left:20%;
 }
 
-@media screen and (max-width: 600px){ /*MEDIUM*/
-    /*------Mobile title CSS*/
+/*----------CONTACT US*/
+    .contact-us img{
+        max-width:1rem;
+    }
 
+
+@media screen and (max-width: 600px){ /*MEDIUM*/
+    
+    main{
+        margin-bottom:20%;
+    }
+    /*------Mobile title CSS*/
     .nav-banner{
         grid-template-columns: 1fr 3fr;
     }
@@ -230,7 +239,7 @@ footer h5, footer h2, footer p, footer li, footer b, footer strong{
 }
 
 @media screen and (max-width: 400px){ /*SMALL*/
-    p, b,strong,  i, li, h1, h2, h3, h4, h5{
+    p, b,strong,  i, li, h1, h2, h3, h4, h5, button{
         font-size: 0.7em;
     }
         /* Nav bar */
