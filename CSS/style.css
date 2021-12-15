@@ -138,6 +138,22 @@ footer h5, footer h2, footer p, footer li, footer b, footer strong{
     max-width: 20px;
 }
 
+/*-------INDEX PAGE*/
+.index-banner img{
+    width:100%;
+}
+#banner-title{
+    position:absolute;
+    top: 40%;
+    left:5%;
+    margin-right:30%;
+
+    font-size: 4em;
+
+    text-shadow: 2px -2px 1px white;
+}
+
+
 /*----------JOIN US*/
 .join-form, #thanks-site{
     display:flex;
@@ -238,6 +254,12 @@ footer h5, footer h2, footer p, footer li, footer b, footer strong{
     .social_media{
         display: none;
     }
+
+    /*------------INDEX*/
+    #banner-title{
+        top:48%;
+        font-size: 2em;
+    }
     /*------directory*/
     .directory-grid{
         gap: 1%;
@@ -293,5 +315,12 @@ footer h5, footer h2, footer p, footer li, footer b, footer strong{
     }
     .menu:hover{
         background-color: whitesmoke;
+    }
+    /*------------INDEX*/
+    #banner-title{
+        top:58%;
+        bottom:100%;
+        font-size: 1.8rem;
+        
     }
 }
