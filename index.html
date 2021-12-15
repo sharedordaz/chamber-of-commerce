@@ -34,7 +34,27 @@
                 <source media="(max-width: 600px)" srcset="images/place-images/plaza-large.jpg">
                 <img src="images/place-images/plaza-exlarge.jpg" alt="Plaza">
             </picture>
-            <h1 id="banner-title"> Join to the chamber of commerce!</h1>
+
+            <div class="absolute-grid">
+                <h1 id="banner-title"> Join to the chamber of commerce!</h1>
+                <div class= "weather_sum"> 
+                    <div>
+                        <h3>Weather Summary</h3>
+                        <img class="weather-image"  alt="Actual climate"> 
+                        <h5>Weather: <i class=weather></i></h5>
+                    </div>
+                    <div>
+                        <b>Actual temp: <p class="currently"></p></b><br>
+                        <b>Higher temp: <p class="high"></p></b><br>
+                        <b>Wind temp: <p class="wind-chill"></p></b><br>
+                        <b>Wind speed: <p class="wind-speed"></p></b><br>
+                        <b>Humidity: <p class="humidity"></p></b><br>
+                    </div>
+        
+                    <script src="scripts/weatherapi.js"></script>    
+                </div>
+            </div>
+            
             <div class="advertisement">
                 <!--Local company advertisement-->
             </div>

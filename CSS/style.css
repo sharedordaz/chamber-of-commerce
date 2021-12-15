@@ -139,18 +139,57 @@ footer h5, footer h2, footer p, footer li, footer b, footer strong{
 }
 
 /*-------INDEX PAGE*/
+.absolute-grid{
+    display:grid;
+    grid-template-columns: 1.5fr 1fr;
+    /* background-color: violet; */
+
+    position:absolute;
+    top: 44%;
+    left:5%; 
+
+    width:90%;
+}
 .index-banner img{
     width:100%;
 }
 #banner-title{
-    position:absolute;
+    /* position:absolute;
     top: 40%;
     left:5%;
-    margin-right:30%;
+    margin-right:30%; */
 
-    font-size: 4em;
+    font-size: 200%;
 
     text-shadow: 2px -2px 1px white;
+}
+
+/*Weather Summary*/
+.weather_sum{
+    border-style: solid;
+    background-color: var(--light-blue);
+    border-width: 2px;
+
+    padding: 3px;
+
+    /* position:absolute;
+    top: 40%;
+    left: 65%; */
+
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+    grid-gap:1em;
+
+}
+.weather_sum img{
+    float:left;
+}
+.weather_sum p{
+    display:inline;
+    font-weight: lighter;
+}
+.weather_sum b, .weather_sum h3{
+    padding:0.3em;
 }
 
 
@@ -256,9 +295,14 @@ footer h5, footer h2, footer p, footer li, footer b, footer strong{
     }
 
     /*------------INDEX*/
+    .absolute-grid{
+        top:53%;
+    }
     #banner-title{
-        top:48%;
         font-size: 2em;
+    }
+    .weather_sum{
+        font-size:0.5em;
     }
     /*------directory*/
     .directory-grid{
@@ -317,10 +361,10 @@ footer h5, footer h2, footer p, footer li, footer b, footer strong{
         background-color: whitesmoke;
     }
     /*------------INDEX*/
+    .absolute-grid{
+        top:60%;
+    }
     #banner-title{
-        top:58%;
-        bottom:100%;
-        font-size: 1.8rem;
-        
+        font-size: 1.8rem;    
     }
 }

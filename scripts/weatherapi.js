@@ -1,18 +1,4 @@
-const fishURL =    "https://api.openweathermap.org/data/2.5/weather?id=5585010&appid=3e5fc40d3932e762ff13a8c9ee95bbb8";
-const sodaURL =    "https://api.openweathermap.org/data/2.5/weather?id=5607916&appid=3e5fc40d3932e762ff13a8c9ee95bbb8";
-const prestonURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=3e5fc40d3932e762ff13a8c9ee95bbb8";
-const cityName = document.title;
-let choosenURL
-if (cityName == "Preston"){
-    choosenURL = prestonURL;
-}
-else if (cityName == "Soda Springs") {
-    choosenURL = sodaURL;
-}
-
-else if (cityName == "Fish Haven") {
-    choosenURL = fishURL;
-}
+const choosenURL = "https://api.openweathermap.org/data/2.5/weather?id=3529612&appid=3e5fc40d3932e762ff13a8c9ee95bbb8";
 
 let image = document.querySelector('.weather-image'); 
 let weather = document.querySelector('.weather');
