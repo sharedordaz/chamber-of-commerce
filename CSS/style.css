@@ -235,7 +235,7 @@ footer h5, footer h2, footer p, footer li, footer b, footer strong{
     grid-column: 1/3;
     display:flex;
     justify-content: center;
-    margin-top: -4em;
+    margin-top: -2em;
 }
 .advertisement img{
     width: 12em;
