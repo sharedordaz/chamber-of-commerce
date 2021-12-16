@@ -271,6 +271,7 @@ footer h5, footer h2, footer p, footer li, footer b, footer strong{
 .cInfo-grid img{
     width:60%;
     max-height:100%;
+    border-radius: 20px;
 }
 /*----------JOIN US*/
 .join-form, #thanks-site{
