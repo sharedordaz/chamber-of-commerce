@@ -97,9 +97,9 @@ nav ul li a{
     font-weight: bolder;
 }
 .menu{
-    filter: invert();
+    filter: invert(100%);
     cursor: pointer;
-    display:none;
+    display: none;
     height: 6em;
 }
 /*Banner*/
