@@ -18,7 +18,7 @@ fetch(choosenURL2)
            
     let imgicon = jsObject.weather[0].icon;
     //console.log(image);
-    image.setAttribute('src', "https://openweathermap.org/img/w/" + imgicon +'.png');
+    image2.setAttribute('src', "https://openweathermap.org/img/w/" + imgicon +'.png');
     
     weather2.textContent =jsObject.weather[0].description;
     currently2.textContent = jsObject.main.temp + " °F";
