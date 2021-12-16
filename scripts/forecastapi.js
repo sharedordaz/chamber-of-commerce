@@ -1,18 +1,5 @@
-const fishforecast =    "https://api.openweathermap.org/data/2.5/forecast?id=5585010&appid=3e5fc40d3932e762ff13a8c9ee95bbb8";
-const sodaforecast =    "https://api.openweathermap.org/data/2.5/forecast?id=5607916&appid=3e5fc40d3932e762ff13a8c9ee95bbb8";
-const prestonforecast = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=3e5fc40d3932e762ff13a8c9ee95bbb8";
-const thisplace = document.title;
-let choosenforecast;
-if (thisplace == "Preston"){
-    choosenforecast = prestonforecast;
-}
-else if (thisplace == "Soda Springs") {
-    choosenforecast = sodaforecast;
-}
+const choosenforecast =    "https://api.openweathermap.org/data/2.5/forecast?id=3529612&appid=3e5fc40d3932e762ff13a8c9ee95bbb8";
 
-else if (thisplace == "Fish Haven") {
-    choosenforecast = fishforecast;
-}
 let main_div = document.querySelector(".five_day");
 let x = 0;
 
@@ -26,6 +13,7 @@ const daysOfWeek = ["Sunday",
 
 let date = new Date;
 let wday = date.getDay();
+let counter = 0;
 //console.log(wday);
 
 fetch(choosenforecast)
@@ -34,8 +22,9 @@ fetch(choosenforecast)
         //console.log(jsonObject); //console log passed
         for (let i = 0; i < jsonObject.list.length; i++ ) {
            //console.log(jsonObject.list[i].dt_txt); //dt text passed
-            if (jsonObject.list[i].dt_txt.indexOf("18:00:00") !== -1) {
+            if (jsonObject.list[i].dt_txt.indexOf("18:00:00") !== -1 && (counter < 3)) {
                 //console.log("True") True printed
+                counter += 1
                 let temp = jsonObject.list[i].main.temp;
                 let icon = "https://openweathermap.org/img/w/" + jsonObject.list[i].weather[0].icon + ".png";
                 
