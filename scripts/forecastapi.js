@@ -24,7 +24,7 @@ fetch(choosenforecast)
            //console.log(jsonObject.list[i].dt_txt); //dt text passed
             if (jsonObject.list[i].dt_txt.indexOf("18:00:00") !== -1 && (counter < 3)) {
                 //console.log("True") True printed
-                counter += 1
+                counter += 1;
                 let temp = jsonObject.list[i].main.temp;
                 let icon = "https://openweathermap.org/img/w/" + jsonObject.list[i].weather[0].icon + ".png";
                 
