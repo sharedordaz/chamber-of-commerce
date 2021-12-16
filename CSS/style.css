@@ -355,6 +355,39 @@ footer h5, footer h2, footer p, footer li, footer b, footer strong{
         font-size:0.5em;
     }
 
+    /*index content*/
+    .content-div{
+        grid-template: 1fr 1fr 1fr 1fr/ 1fr;
+        gap:1rem;
+        padding:1rem;
+    }
+    /*Five day Forecast*/
+    .five_day{
+        grid-gap: 3%;
+    
+        grid-row: 1/1;
+        grid-column: 1/3;
+    }
+    .upcoming-events{
+        grid-row:3/3;
+        grid-column:1/3;
+    
+        padding:1em;
+        max-height:12rem;
+    }
+    .site-purpose{
+        grid-row:2/2;
+    }
+    .advertisement{
+        grid-row:4/4;
+        margin-top: 0em;
+    }
+    .advertisement img{
+        width: 10em;
+        height:100%;
+        padding:0.5rem;
+    }
+
     /*------directory*/
     .directory-grid{
         gap: 1%;
