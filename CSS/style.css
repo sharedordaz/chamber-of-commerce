@@ -155,6 +155,7 @@ footer h5, footer h2, footer p, footer li, footer b, footer strong{
     width:100%;
 }
 #banner-title{
+    color:black;
     font-size: 200%;
     text-shadow: 2px -2px 1px white;
 }
@@ -243,6 +244,34 @@ footer h5, footer h2, footer p, footer li, footer b, footer strong{
 }
 
 
+/*----------CITY INFORMATION*/
+.cInfo-banner{
+    background-image: url("../images/place-images/indian-monument-large.jpg");
+    width:100%;
+    background-size:cover; /*you can use 100% 1005 also*/
+    height:300px;
+    font-size:200%;
+    text-align: center;
+}
+.cInfo-grid{
+    background-color: var(--light-blue);
+    border: 2px solid gray;
+
+    display: grid;
+    grid-template: repeat(3, 1fr) / 1fr 1fr;
+    gap:2em;
+
+    margin: 2rem 1rem 1rem 1px;
+    padding: 1em;
+
+    justify-items: center;
+    align-items:center;
+    text-align: center;
+}
+.cInfo-grid img{
+    width:60%;
+    max-height:100%;
+}
 /*----------JOIN US*/
 .join-form, #thanks-site{
     display:flex;
